@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/controlsfx-8.40.12.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/controlsfx-samples-8.40.12.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/fxsampler-1.0.9.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/java-mail-1.4.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/javax.mail-api-1.4.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/poi-3.16-beta2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/poi-examples-3.16-beta2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/poi-excelant-3.16-beta2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/poi-ooxml-3.16-beta2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/poi-ooxml-schemas-3.16-beta2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/poi-scratchpad-3.16-beta2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse workshope/FinalPrototype/Jar Libraries/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.*?>
+<?import org.controlsfx.control.spreadsheet.*?>
+<?import org.controlsfx.control.gridbase.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1116.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manageDataController">
+   <children>
+      <AnchorPane fx:id="sheetAnchor" layoutX="230.0" layoutY="4.0" prefHeight="627.0" prefWidth="878.0">
+         <children>
+            <SpreadsheetView fx:id="spreadsheet" editable="true" prefHeight="100.0" prefWidth="100.0" showColumnHeader="true" showRowHeader="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="deleteSelectedButton" layoutX="73.0" layoutY="242.0" mnemonicParsing="false" onAction="#deleteSelectedAction" prefHeight="25.0" prefWidth="132.0" text="Clear Selected Cells" />
+      <Button fx:id="checkAndUpdateButton" layoutX="73.0" layoutY="318.0" mnemonicParsing="false" onAction="#checkAndUpdateAction" prefHeight="25.0" prefWidth="132.0" text="Check and Update" />
+      <Label layoutX="21.0" layoutY="19.0" prefHeight="39.0" prefWidth="183.0" text="Manage Existing ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutY="216.0" prefHeight="0.0" prefWidth="225.0" />
+      <Label layoutX="11.0" layoutY="101.0" text="Study">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="139.0" text="Year">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="degreeCombo" layoutX="64.0" layoutY="102.0" prefWidth="150.0" />
+      <ComboBox fx:id="yearCombo" layoutX="64.0" layoutY="140.0" prefWidth="150.0" />
+      <Button fx:id="loadButton" layoutX="105.0" layoutY="178.0" mnemonicParsing="false" onAction="#importAction" prefHeight="25.0" prefWidth="68.0" text="Load" />
+      <Label layoutX="83.0" layoutY="51.0" prefHeight="39.0" prefWidth="57.0" text="Data">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutY="292.0" prefHeight="0.0" prefWidth="225.0" />
+   </children>
+</AnchorPane>

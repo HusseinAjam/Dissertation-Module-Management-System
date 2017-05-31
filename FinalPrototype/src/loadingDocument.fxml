@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.*?>
+<?import org.controlsfx.control.spreadsheet.*?>
+<?import org.controlsfx.control.gridbase.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1116.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loadDataController">
+   <children>
+      <AnchorPane fx:id="sheetAnchor" layoutX="230.0" layoutY="4.0" prefHeight="627.0" prefWidth="878.0">
+         <children>
+            <SpreadsheetView fx:id="spreadsheet" editable="true" prefHeight="100.0" prefWidth="100.0" showColumnHeader="true" showRowHeader="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="importButton" layoutX="141.0" layoutY="108.0" mnemonicParsing="false" onAction="#importAction" prefHeight="25.0" prefWidth="68.0" text="Import" />
+      <Button fx:id="deleteSelectedButton" layoutX="55.0" layoutY="338.0" mnemonicParsing="false" onAction="#deleteSelectedAction" prefHeight="25.0" prefWidth="132.0" text="Clear Selected Cells" />
+      <Button fx:id="checkAndLoadButton" layoutX="55.0" layoutY="262.0" mnemonicParsing="false" onAction="#checkAndLoadAction" prefHeight="25.0" prefWidth="132.0" text="Check and Save" />
+      <Label layoutX="26.0" layoutY="23.0" prefHeight="39.0" prefWidth="202.0" text="Loading New Data">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutY="307.0" prefHeight="0.0" prefWidth="225.0" />
+      <Label layoutX="13.0" layoutY="107.0" text="Import file">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="169.0" text="Level">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="207.0" text="Year">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="degreeCombo" layoutX="66.0" layoutY="170.0" prefWidth="150.0" />
+      <ComboBox fx:id="yearCombo" layoutX="66.0" layoutY="208.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

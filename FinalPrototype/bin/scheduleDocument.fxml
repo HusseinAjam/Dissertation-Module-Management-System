@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1116.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduleController">
+   <children>
+      <Label layoutX="25.0" layoutY="61.0" text="Level">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="92.0" text="Year">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="degreeCombo" layoutX="215.0" layoutY="57.0" prefWidth="150.0" />
+      <ComboBox fx:id="yearCombo" layoutX="215.0" layoutY="93.0" prefWidth="150.0" />
+      <Label layoutX="18.0" layoutY="19.0" text="Schedule Events">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="eventDurationCombo" layoutX="215.0" layoutY="130.0" prefWidth="150.0" />
+      <Label layoutX="25.0" layoutY="129.0" text="Event duration">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="168.0" text="Preparation time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="preparationCombo" layoutX="215.0" layoutY="170.0" prefWidth="150.0" />
+      <Separator layoutY="333.0" prefHeight="3.0" prefWidth="1116.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="333.0" />
+      <DatePicker fx:id="dayOneSelector" layoutX="215.0" layoutY="211.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="26.0" layoutY="210.0" text="Starting date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="250.0" text="Staff break every:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="breakCombo" layoutX="215.0" layoutY="248.0" prefHeight="25.0" prefWidth="79.0" />
+      <Label layoutX="302.0" layoutY="247.0" text="student">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="FirstNextButton" layoutX="233.0" layoutY="291.0" mnemonicParsing="false" onAction="#FirstNextAction" prefHeight="36.0" prefWidth="116.0" text="Next →">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Pane fx:id="paneOne" layoutX="371.0" layoutY="-1.0" prefHeight="333.0" prefWidth="754.0" visible="false">
+         <children>
+            <Label>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="NoDMList" layoutX="276.0" layoutY="55.0" onMouseClicked="#NoDMListAction" prefHeight="225.0" prefWidth="202.0" />
+            <Label layoutX="249.0" layoutY="11.0" text="Exclude Staff from Double Marking">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="NoRoomsList" layoutX="34.0" layoutY="55.0" onMouseClicked="#NoRoomsListAction" prefHeight="225.0" prefWidth="202.0" />
+            <Label layoutX="55.0" layoutY="11.0" prefHeight="27.0" prefWidth="174.0" text="Exclude Rooms/Labs">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="nextButton" layoutX="582.0" layoutY="292.0" mnemonicParsing="false" onAction="#nextAction" prefHeight="36.0" prefWidth="103.0" text="Next ↓">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="579.0" layoutY="38.0" text="Hold (Ctrl) and select">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="36.0" text="Hold (Ctrl) and select">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ListView fx:id="NoStudentsList" layoutX="513.0" layoutY="55.0" onMouseClicked="#NoStudentsListAction" prefHeight="225.0" prefWidth="202.0" />
+            <Label layoutX="552.0" layoutY="11.0" text="Exclude Students">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="37.0" text="Hold (Ctrl) and select">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="paneTwo" layoutX="14.0" layoutY="336.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="291.0" prefWidth="1102.0" visible="false">
+         <children>
+            <Separator layoutX="15.0" layoutY="47.0" prefHeight="3.0" prefWidth="174.0" />
+            <Separator layoutX="188.0" layoutY="47.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="14.0" layoutY="48.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="15.0" layoutY="284.0" prefHeight="3.0" prefWidth="174.0" />
+            <CheckBox fx:id="dayTwoActivate" layoutX="244.0" layoutY="20.0" mnemonicParsing="false" onAction="#dayTwoActivateAction" text="Activate Day 2" />
+            <Separator layoutX="201.0" layoutY="47.0" prefHeight="3.0" prefWidth="174.0" />
+            <Separator layoutX="374.0" layoutY="47.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="200.0" layoutY="48.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="201.0" layoutY="284.0" prefHeight="3.0" prefWidth="174.0" />
+            <CheckBox fx:id="dayThreeActivate" disable="true" layoutX="433.0" layoutY="20.0" mnemonicParsing="false" onAction="#dayThreeActivateAction" text="Activate Day 3" />
+            <Separator layoutX="390.0" layoutY="47.0" prefHeight="3.0" prefWidth="174.0" />
+            <Separator layoutX="563.0" layoutY="47.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="389.0" layoutY="48.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="390.0" layoutY="284.0" prefHeight="3.0" prefWidth="174.0" />
+            <CheckBox fx:id="dayFourActivate" disable="true" layoutX="623.0" layoutY="20.0" mnemonicParsing="false" onAction="#dayFourActivateAction" text="Activate Day 4" />
+            <Separator layoutX="580.0" layoutY="47.0" prefHeight="3.0" prefWidth="174.0" />
+            <Separator layoutX="753.0" layoutY="47.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="579.0" layoutY="48.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="580.0" layoutY="284.0" prefHeight="3.0" prefWidth="174.0" />
+            <CheckBox fx:id="dayFiveActivate" disable="true" layoutX="809.0" layoutY="20.0" mnemonicParsing="false" onAction="#dayFiveActivateAction" text="Activate Day 5" />
+            <Separator layoutX="770.0" layoutY="47.0" prefHeight="3.0" prefWidth="174.0" />
+            <Separator layoutX="943.0" layoutY="47.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="769.0" layoutY="48.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="1.0" />
+            <Separator layoutX="770.0" layoutY="284.0" prefHeight="3.0" prefWidth="174.0" />
+            <Button fx:id="scheduleButton" layoutX="962.0" layoutY="248.0" mnemonicParsing="false" onAction="#scheduleAction" prefHeight="36.0" prefWidth="129.0" text="Schedule">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="25.0" layoutY="99.0" text="Start from " />
+            <ComboBox fx:id="startOneCombo" layoutX="92.0" layoutY="100.0" prefHeight="17.0" prefWidth="88.0" />
+            <Label layoutX="25.0" layoutY="140.0" text="End at" />
+            <ComboBox fx:id="endOneCombo" layoutX="92.0" layoutY="141.0" prefHeight="17.0" prefWidth="88.0" />
+            <Label layoutX="74.0" layoutY="20.0" text="Day One" />
+            <ListView fx:id="excludeOneList" layoutX="78.0" layoutY="179.0" prefHeight="98.0" prefWidth="103.0" />
+            <Label layoutX="25.0" layoutY="186.0" text="Exclude" />
+            <Label layoutX="25.0" layoutY="201.0" text="staff" />
+            <Label layoutX="213.0" layoutY="98.0" text="Start from " />
+            <ComboBox fx:id="startTwoCombo" disable="true" layoutX="280.0" layoutY="99.0" prefHeight="17.0" prefWidth="88.0" />
+            <Label layoutX="213.0" layoutY="139.0" text="End at" />
+            <ComboBox fx:id="endTwoCombo" disable="true" layoutX="280.0" layoutY="140.0" prefHeight="17.0" prefWidth="88.0" />
+            <ListView fx:id="excludeTwoList" disable="true" layoutX="266.0" layoutY="178.0" prefHeight="98.0" prefWidth="103.0" />
+            <Label layoutX="213.0" layoutY="185.0" text="Exclude" />
+            <Label layoutX="213.0" layoutY="200.0" text="staff" />
+            <Label layoutX="404.0" layoutY="99.0" text="Start from " />
+            <ComboBox fx:id="startThreeCombo" disable="true" layoutX="471.0" layoutY="100.0" prefHeight="17.0" prefWidth="88.0" />
+            <Label layoutX="404.0" layoutY="140.0" text="End at" />
+            <ComboBox fx:id="endThreeCombo" disable="true" layoutX="471.0" layoutY="141.0" prefHeight="17.0" prefWidth="88.0" />
+            <ListView fx:id="excludeThreeList" disable="true" layoutX="457.0" layoutY="179.0" prefHeight="98.0" prefWidth="103.0" />
+            <Label layoutX="404.0" layoutY="186.0" text="Exclude" />
+            <Label layoutX="404.0" layoutY="201.0" text="staff" />
+            <Label layoutX="590.0" layoutY="99.0" text="Start from " />
+            <ComboBox fx:id="startFourCombo" disable="true" layoutX="657.0" layoutY="100.0" prefHeight="17.0" prefWidth="88.0" />
+            <Label layoutX="590.0" layoutY="140.0" text="End at" />
+            <ComboBox fx:id="endFourCombo" disable="true" layoutX="657.0" layoutY="141.0" prefHeight="17.0" prefWidth="88.0" />
+            <ListView fx:id="excludeFourList" disable="true" layoutX="643.0" layoutY="179.0" prefHeight="98.0" prefWidth="103.0" />
+            <Label layoutX="590.0" layoutY="186.0" text="Exclude" />
+            <Label layoutX="590.0" layoutY="201.0" text="staff" />
+            <Label layoutX="780.0" layoutY="99.0" text="Start from " />
+            <ComboBox fx:id="startFiveCombo" disable="true" layoutX="847.0" layoutY="100.0" prefHeight="17.0" prefWidth="88.0" />
+            <Label layoutX="780.0" layoutY="140.0" text="End at" />
+            <ComboBox fx:id="endFiveCombo" disable="true" layoutX="847.0" layoutY="141.0" prefHeight="17.0" prefWidth="88.0" />
+            <ListView fx:id="excludeFiveList" disable="true" layoutX="833.0" layoutY="179.0" prefHeight="98.0" prefWidth="103.0" />
+            <Label layoutX="780.0" layoutY="186.0" text="Exclude" />
+            <Label layoutX="780.0" layoutY="201.0" text="staff" />
+            <DatePicker fx:id="dayTwoSelector" disable="true" layoutX="226.0" layoutY="58.0" prefHeight="25.0" prefWidth="129.0" />
+            <DatePicker fx:id="dayThreeSelector" disable="true" layoutX="413.0" layoutY="58.0" prefHeight="25.0" prefWidth="129.0" />
+            <DatePicker fx:id="dayFourSelector" disable="true" layoutX="603.0" layoutY="58.0" prefHeight="25.0" prefWidth="129.0" />
+            <DatePicker fx:id="dayFiveSelector" disable="true" layoutX="793.0" layoutY="58.0" prefHeight="25.0" prefWidth="129.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

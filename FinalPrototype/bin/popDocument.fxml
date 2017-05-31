@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.controlsfx.control.*?>
+<?import org.controlsfx.control.spreadsheet.*?>
+<?import org.controlsfx.control.gridbase.*?>
+
+<AnchorPane fx:id="sheetAnchor" prefHeight="627.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="popController">
+   <children>
+      <SpreadsheetView fx:id="spreadsheet" editable="true" prefHeight="100.0" prefWidth="100.0" showColumnHeader="true" showRowHeader="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

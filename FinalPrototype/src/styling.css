@@ -1,0 +1,7 @@
+#subPane {
+    -fx-background-image:url('Canvas1.png');
+}
+
+#general {
+    -fx-background-color: white;
+}
